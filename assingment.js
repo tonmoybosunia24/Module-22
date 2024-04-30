@@ -10,7 +10,7 @@
 //        }
        
 // }
-// const cube = cubeNumber(true);
+// const cube = cubeNumber("rohim");
 // console.log(cube);
 
 // Problem 02
@@ -26,12 +26,12 @@
 //               return false;
 //        }
 // }
-// const finder = matchFinder("shamim", "mim");
+// const finder = matchFinder("shamim", "shx");
 // console.log(finder);
 
 // problem 3
 
-// const input = [3, 5];
+// const input = [6, 7];
 // function sortMaker(input) {
 //     let num1 = input[0];
 //     let num2 = input[1];
@@ -56,7 +56,7 @@
 // Problem 04
 
 // const address = [
-//        {street: 10, house: "15A", socity: "Earth Perfect"}
+//        {street: 10, house: "16A", socity: "Earth Perfect"}
 // ];
 // function obj(address){
 //        for(let i = 0; i < address.length; i++){
@@ -87,7 +87,7 @@
    
 // problem 5
 
-// const chargearray = [1, 5, 10];
+// const chargearray = [1, 5, 2, 1];
 // const totalDue = 10;
 // function canPay(chargearray, totalDue){
 //        if(chargearray.length === 0){
