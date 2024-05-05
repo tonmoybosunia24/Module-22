@@ -203,3 +203,162 @@
 // }
 // const positive = onlyPositive(positiveNumber);
 // console.log(positive)
+
+// const friends = [13, 15, 20, 40, 44, 60, 75, 80];
+// console.log(Array.isArray(friends))
+// const friends = [13, 15, 20, 40, 44, 60, 75, 80];
+// const newFriendAge = [77, 44, 55, 66];
+// const allFriends = friends.concat(newFriendAge);
+// console.log(allFriends)
+// const friend = [45, 55, 50, 43, 41, 38, 70, 60, 22];
+// const partial = friend.slice(2, 5);
+// console.log(partial)
+// const friend = [45, 55, 50, 43, 41, 38, 70, 60, 22];
+// const partial = friend.splice(2, 6);
+// console.log(partial)
+// console.log(friend)
+// const names = ["abul", "babul", "cabul", "dabul", "babul", "abul", "kabul", "gabul", "cabul", "babul", "abul", "abul"];
+// function removeDublicate(names){
+//        const unique = [];
+//        for(let i = 0; i < names.length; i++){
+//               const name = names[i];
+//               if(unique.includes(name) === false){
+//                      unique.push(name);
+//               }
+//        }
+//        return unique;
+// }
+// const finalNames = removeDublicate(names);
+// console.log(finalNames)
+// for(let i = 1; i <= 50; i++){
+//        if(i % 3 === 0 && i % 5 === 0){
+//               console.log("foober")
+//        }
+//        else if(i % 3 === 0){
+//               console.log("foo")
+//        }
+//        else if(i % 5 === 0){
+//               console.log("ber")
+//        }
+//        else{
+//               console.log(i)
+//        }
+// }
+// function woodcalculator(chairQuantity, tableQuantity, bedquantity){
+//        const perchairwood = 3;
+//        const pertableWood = 10;
+//        const perbedWood = 50;
+//        const chairWood = perchairwood * chairQuantity;
+//        const tableWood = pertableWood * tableQuantity;
+//        const bedWood = perbedWood * bedquantity;
+//        console.log(chairWood, tableWood, bedWood);
+//        const totalWood = chairWood + tableWood + bedWood;
+//        return totalWood;
+// }
+// const totalWod = woodcalculator(3, 3, 1);
+// console.log(totalWod)
+// const phones = [
+//        {name: "samsung", camera: 12, storage: "32Gb", price: 36000, color: "Silver"},
+//        {name: "walton", camera: 36, storage: "128Gb", price: 30000, color: "blue"},
+//        {name: "iphone", camera: 5, storage: "32Gb", price: 50000, color: "black"},
+//        {name: "poco", camera: 20, storage: "64Gb", price: 15000, color: "black"},
+//        {name: "realme", camera: 23, storage: "128Gb", price: 17000, color: "pink"},
+// ];
+// function chepestPhoneFind(phones){
+//        let chepest = phones[0];
+//        for(let i = 0; i < phones.length; i++){
+//               const phone = phones[i];
+//               if(phone.price < chepest.price){
+//                      chepest = phone;
+//               }
+//        }
+//        return chepest
+// }
+// const chepestPhone = chepestPhoneFind(phones);
+// console.log(chepestPhone);
+// const phones = [
+//        {name: "samsung", camera: 12, storage: "32Gb", price: 36000, color: "Silver"},
+//        {name: "walton", camera: 36, storage: "128Gb", price: 30000, color: "blue"},
+//        {name: "iphone", camera: 5, storage: "32Gb", price: 50000, color: "black"},
+//        {name: "poco", camera: 20, storage: "64Gb", price: 15000, color: "black"},
+//        {name: "realme", camera: 23, storage: "128Gb", price: 17000, color: "pink"},
+// ];
+// function highestCamra(phones){
+//        let highest = phones[0];
+//        for(let i = 0; i < phones.length; i++){
+//               let phone = phones[i];
+//               if(phone.camera > highest.camera){
+//                      highest = phone;
+//               }
+//        }
+//        return highest;
+// }
+// const highestCamraPhone = highestCamra(phones);
+// console.log(highestCamraPhone);
+// const shoppingCard = [
+//        {name: "show", price: 1200},
+//        {name: "shirt", price: 1000},
+//        {name: "pant", price: 700},
+//        {name: "belt", price: 200}
+// ];
+// function totalCost(shoppingCard){
+//        let cost = 0;
+//        for(let i = 0; i < shoppingCard.length; i++){
+//               const product = shoppingCard[i];
+//               cost = cost + product.price;
+//        }
+//        return cost;
+// }
+// const total = totalCost(shoppingCard);
+// console.log(total)
+// const shoppingCard = [
+//        {name: "show", price: 1200, quantity: 5},
+//        {name: "shirt", price: 1000, quantity: 4},
+//        {name: "pant", price: 700, quantity: 3},
+//        {name: "belt", price: 200, quantity: 6}
+// ];
+// function totalCost(shoppingCard){
+//        let cost = 0;
+//        for(let i = 0; i < shoppingCard.length; i++){
+//               let product = shoppingCard[i];
+//               let productquantity = product.price * product.quantity;
+//               cost = cost + productquantity;
+//        }
+//        return cost;
+// }
+// const total = totalCost(shoppingCard);
+// console.log(total)
+// function ticketPrice(ticketQuantity){
+//        const first100Price = 100;
+//        const second100Price = 90;
+//        const third100Rate = 70;
+//        if(ticketQuantity <= 100){
+//               const price1 = first100Price * ticketQuantity;
+//               return price1;
+//        }
+//        else if(ticketQuantity > 100 && ticketQuantity <= 200){
+//               const price1 = first100Price * 100;
+//               const restticket = ticketQuantity - 100;
+//               const restTicketPrice = restticket * second100Price;
+//               const price2 = restTicketPrice + price1;
+//               return price2;
+//        }
+//        else{
+//               const price1 = first100Price * 100;
+//               const second100Pric = 100 * second100Price;
+//               const rest = ticketQuantity - 200;
+//               const restprice = rest * third100Rate;
+//               const price3 = price1 + second100Pric + restprice;
+//               return price3
+//        }
+// }
+// const prize = ticketPrice(220);
+// console.log(prize)
+function add(num1, num2){
+       if(typeof num1 !== "number"){
+              console.log("Wrong Input")
+       }
+       return num1 + num2;
+}
+const result = add(20, 15);
+console.log(result)
